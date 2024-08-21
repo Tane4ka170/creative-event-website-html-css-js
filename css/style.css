@@ -386,14 +386,117 @@ button {
   margin-top: 5px;
 }
 .schedule-tab.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
-.js-schedule-tab {
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
 }
-.active {
+.schedule-table.active {
+  display: table;
+  animation: schedule-table 0.5s ease;
+}
+@keyframes schedule-table {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .schedule-tabs-content {
 }
-.schedule-table {
+.schedule-table tr:nth-child(even) {
+  background-color: var(--bg-green);
 }
-.js-schedule-table {
+.schedule-table td,
+.schedule-table th {
+  padding: 20px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.schedule-table span {
+  display: inline-block;
+}
+.schedule-table img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+/* sponsors */
+.sponsors {
+  padding: var(--section-py) 0;
+}
+.sponsors-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.sponsors-item {
+  pad: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-light-gray);
+}
+
+/* pricing */
+.pricing {
+  padding: var(--section-py) 0;
+}
+.pricing-cards {
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+.pricing-card {
+}
+.pricing-card .inner {
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-light-gray);
+}
+.pricing-card .title {
+  text-transform: capitalize;
+  font-size: var(--fs-2xl);
+  font-weight: 500;
+  color: var(--text-x-dark-grey);
+}
+.pricing-card ul {
+  margin-top: 30px;
+}
+.pricing-card li {
+  position: relative;
+  padding-left: 30px;
+}
+.pricing-card li + li {
+  margin-top: 8px;
+}
+.pricing-card li i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 14px;
+}
+.pricing-card .price {
+  font-size: var(--fs-2xl);
+  color: var(--text-x-dark-grey);
+  font-weight: bold;
+  margin-top: 30px;
+}
+.decor {
+}
+.inner {
+}
+.title {
+}
+.price {
 }
