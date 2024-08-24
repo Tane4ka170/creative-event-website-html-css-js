@@ -4,16 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sound Spectrum</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/splitting.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- preloader -->
+    <div class="preloader js-preloader">
+      <div class="preloader-bg">
+        <div class="bg-item js-bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+        <div class="bg-item"></div>
+      </div>
+      <div class="preloader-items">
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+
     <div class="page-wrapper">
       <!-- header -->
       <header class="header">
         <div class="header-container container">
-          <a href="#" class="header-logo" data-aos="fade-down"><span>Sound</span>spectrum</a>
+          <a href="#" class="header-logo" data-aos="fade-down"
+            ><span>Sound</span>spectrum</a
+          >
           <button class="header-toggler js-header-toggler" type="button">
             <span></span>
           </button>
@@ -34,29 +60,41 @@
       <section class="home" id="home">
         <div class="home-container container">
           <div class="home-left">
-            <h1 class="home-title">Sound Spectrum 2025</h1>
+            <h1 class="home-title" data-splitting data-aos="text-animation">
+              Sound Spectrum 2025
+            </h1>
             <p class="home-dub-title">
-              <span>
+              <span data-aos="fade-up">
                 <i class="fa fa-calendar-alt"></i>
                 22-23 June
               </span>
-              <span>
+              <span data-aos="fade-up" data-aos-delay="300">
                 <i class="fa fa-map-marker-alt"></i>
                 Doheny State Beach Dana Point, CA, USA
               </span>
             </p>
-            <div class="home-btn">
+            <div class="home-btn" data-aos="fade-up" data-aos-delay="600">
               <a href="#pricing" class="btn">buy tickets</a>
             </div>
           </div>
           <div class="home-right">
             <div class="home-box">
-              <div class="home-decor"></div>
+              <div class="home-decor" data-aos="reveal-left"></div>
               <div class="home-img-box-1">
-                <img src="img/home-1.webp" alt="Music fest" />
+                <img
+                  src="img/home-1.webp"
+                  alt="Music fest"
+                  data-aos="reveal-left"
+                  data-aos-delay="400"
+                />
               </div>
               <div class="home-img-box-2">
-                <img src="img/home-2.jpg" alt="Music fest perfomer" />
+                <img
+                  src="img/home-2.jpg"
+                  alt="Music fest perfomer"
+                  data-aos="reveal-left"
+                  data-aos-delay="500"
+                />
               </div>
             </div>
           </div>
@@ -69,25 +107,35 @@
         <div class="container">
           <div class="about-content">
             <div class="section-header">
-              <h2 class="section-header-title">about event</h2>
+              <h2
+                class="section-header-title"
+                data-splitting
+                data-aos="text-animation"
+              >
+                about event
+              </h2>
             </div>
             <div class="about-img-box">
-              <img src="img/about-1.avif" alt="music fest" />
-              <div class="about-decor-1"></div>
-              <div class="about-decor-2"></div>
+              <img
+                src="img/about-1.avif"
+                alt="music fest"
+                data-aos="reveal-left"
+              />
+              <div class="about-decor-1" data-aos="reveal-left"></div>
+              <div class="about-decor-2" data-aos="reveal-left"></div>
             </div>
             <div class="about-text">
-              <p>
+              <p data-aos="fade">
                 Join us for an unforgettable music festival right on the beach!
                 Feel the sun on your skin, sand between your toes, and the
                 energy of your favorite artists. Meet us at Doheny State Beach!
               </p>
-              <p>
+              <p data-aos="fade">
                 Dance the night away under the stars surrounded by breathtaking
                 views.
               </p>
-              <p>Don't miss the hottest event of the summer!</p>
-              <div class="about-btn">
+              <p data-aos="fade">Don't miss the hottest event of the summer!</p>
+              <div class="about-btn" data-aos="fade-up">
                 <a href="#pricing" class="btn">buy tickets</a>
               </div>
             </div>
@@ -100,32 +148,74 @@
       <section class="performers" id="performers">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header-title">special performers</h2>
+            <h2
+              class="section-header-title"
+              data-splitting
+              data-aos="text-animation"
+            >
+              special performers
+            </h2>
           </div>
           <div class="performers-items">
             <!-- performers item -->
             <div class="performers-item">
-              <img src="img/performer-1.jpg" alt="Elizabeth Ross" />
+              <img
+                src="img/performer-1.jpg"
+                alt="Elizabeth Ross"
+                data-aos="reveal-left"
+              />
               <div class="performers-info">
-                <div class="performers-backdrop"></div>
+                <div class="performers-backdrop" data-aos="reveal-left"></div>
                 <h3 class="performers-name">Elizabeth Ross</h3>
                 <div class="performers-job">Singer</div>
               </div>
             </div>
             <div class="performers-item">
-              <img src="img/performer-2.webp" alt="Marlene Mair" />
+              <img
+                src="img/performer-2.webp"
+                alt="Marlene Mair"
+                data-aos="reveal-left"
+              />
               <div class="performers-info">
-                <div class="performers-backdrop"></div>
-                <h3 class="performers-name">Marlene Mair</h3>
-                <div class="performers-job">Singer</div>
+                <div class="performers-backdrop" data-aos="reveal-left"></div>
+                <h3
+                  class="performers-name"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
+                  Marlene Mair
+                </h3>
+                <div
+                  class="performers-job"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
+                  Singer
+                </div>
               </div>
             </div>
             <div class="performers-item">
-              <img src="img/performer-3.jpg" alt="Malya Laurent" />
+              <img
+                src="img/performer-3.jpg"
+                alt="Malya Laurent"
+                data-aos="reveal-left"
+              />
               <div class="performers-info">
-                <div class="performers-backdrop"></div>
-                <h3 class="performers-name">Malya Laurent</h3>
-                <div class="performers-job">Singer</div>
+                <div class="performers-backdrop" data-aos="reveal-left"></div>
+                <h3
+                  class="performers-name"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
+                  Malya Laurent
+                </h3>
+                <div
+                  class="performers-job"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
+                  Singer
+                </div>
               </div>
             </div>
             <!-- performers item -->
@@ -138,9 +228,15 @@
       <section class="schedule" id="schedule">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header-title">event schedule</h2>
+            <h2
+              class="section-header-title"
+              data-splitting
+              data-aos="text-animation"
+            >
+              event schedule
+            </h2>
           </div>
-          <div class="schedule-tabs">
+          <div class="schedule-tabs" data-aos="fade-up">
             <button
               class="schedule-tab js-schedule-tab active"
               type="button"
@@ -157,7 +253,11 @@
             </button>
           </div>
           <div class="schedule-tabs-content">
-            <table class="schedule-table js-schedule-table active" id="day-1">
+            <table
+              class="schedule-table js-schedule-table active"
+              id="day-1"
+              data-aos="fade-up"
+            >
               <tr>
                 <th>time</th>
                 <th>genre</th>
@@ -228,32 +328,38 @@
       <section class="sponsors" id="sponsors">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header-title">event sponsors</h2>
+            <h2
+              class="section-header-title"
+              data-splitting
+              data-aos="text-animation"
+            >
+              event sponsors
+            </h2>
           </div>
           <div class="sponsors-items">
             <!-- sponsors-item -->
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade">
               <img src="img/sponsor-1.png" alt="Ocean Conservation Fund" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="50">
               <img src="img/sponsor-2.png" alt="Coastal Threads" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="100">
               <img src="img/sponsor-3.png" alt="Beach Body Boost" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="150">
               <img src="img/sponsor-4.png" alt="Wave Riders" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="200">
               <img src="img/sponsor-5.png" alt="Surf 'n' Stay" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="250">
               <img src="img/sponsor-6.png" alt="Sun Safe" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="300">
               <img src="img/sponsor-7.png" alt="Sea Salt Skin" />
             </div>
-            <div class="sponsors-item">
+            <div class="sponsors-item" data-aos="fade" data-aos-delay="350">
               <img src="img/sponsor-8.png" alt="Coastline Cravings" />
             </div>
             <!-- sponsors-item -->
@@ -266,11 +372,17 @@
       <section class="pricing" id="pricing">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header-title">get your ticket</h2>
+            <h2
+              class="section-header-title"
+              data-splitting
+              data-aos="text-animation"
+            >
+              get your ticket
+            </h2>
           </div>
           <div class="pricing-cards">
             <div class="pricing-card">
-              <div class="decor"></div>
+              <div class="decor" data-aos="reveal-left"></div>
               <div class="inner">
                 <h3 class="title">basic</h3>
                 <ul>
@@ -283,7 +395,7 @@
               </div>
             </div>
             <div class="pricing-card">
-              <div class="decor"></div>
+              <div class="decor" data-aos="reveal-left"></div>
               <div class="inner">
                 <h3 class="title">standard</h3>
                 <ul>
@@ -309,74 +421,83 @@
       <section class="contact" id="contact">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header-title">contact us</h2>
+            <h2
+              class="section-header-title"
+              data-splitting
+              data-aos="text-animation"
+            >
+              contact us
+            </h2>
           </div>
           <div class="contact-content">
             <div class="contact-items">
-              <div class="contact-item">
+              <div class="contact-item" data-aos="fade-up">
                 <i class="fa fa-phone"></i>
                 <div class="text">
                   <h3>call us</h3>
                   <p>1-983-276-7204</p>
                 </div>
               </div>
-              <div class="contact-item">
-                  <i class="fa fa-envelope"></i>
+              <div class="contact-item" data-aos="fade-up">
+                <i class="fa fa-envelope"></i>
                 <div class="text">
-                    <h3>email us</h3>
+                  <h3>email us</h3>
                   <p>soundspectrum@gmail.com</p>
                 </div>
-            </div>
-              <div class="contact-item">
-                  <i class="fa fa-map-marker-alt"></i>
-                  <div class="text">
-                      <h3>reach us</h3>
-                      <p>9902 Vandervort Wells North Neomabury, MD 27470 </p>
-                    </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up">
+                <i class="fa fa-map-marker-alt"></i>
+                <div class="text">
+                  <h3>reach us</h3>
+                  <p>9902 Vandervort Wells North Neomabury, MD 27470</p>
                 </div>
+              </div>
             </div>
-                <form class="contact-form">
-                    <div class="col-2">
-                        <div class="input-box">
-                            <input type="text" placeholder="Name" class="inputt">
-                        </div>
-                        <div class="input-box">
-                            <input type="text" placeholder="Email" class="inputt">
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" placeholder="Subject" class="inputt">
-                    </div>
-                    <div class="input-box">
-                        <textarea class="inputt input-message" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send message</button>
-                </form>
-            </div>
+            <form class="contact-form" data-aos="fade-up">
+              <div class="col-2">
+                <div class="input-box">
+                  <input type="text" placeholder="Name" class="inputt" />
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Email" class="inputt" />
+                </div>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Subject" class="inputt" />
+              </div>
+              <div class="input-box">
+                <textarea
+                  class="inputt input-message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send message</button>
+            </form>
           </div>
         </div>
-    </div>
       </section>
+
       <!-- contact -->
 
       <!-- footer -->
-       <footer class="footer">
+      <footer class="footer">
         <div class="footer-container container">
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="footer-copyright">
-                &copy;2024 SoundSpectrum. All Right Reserved
-            </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="footer-copyright">
+            &copy;2024 SoundSpectrum. All Right Reserved
+          </div>
         </div>
-       </footer>
+      </footer>
       <!-- footer -->
     </div>
 
     <script src="js/aos.js"></script>
+    <script src="js/splitting.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
