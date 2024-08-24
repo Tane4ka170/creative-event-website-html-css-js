@@ -1,9 +1,17 @@
 window.addEventListener("load", () => {
-  // Initialize AOS
-  AOS.init({
-    duration: 1200,
-    easing: "ease-in-out-cubic",
-  });
+  // preloader
+  document.querySelector(".js-preloader").classList.add("loaded");
+  document
+    .querySelector(".js-preloader .js-bg-item")
+    .addEventListener("transitionend", () => {
+      document.querySelector(".js-preloader").style.display = "none";
+      // Initialize AOS
+      AOS.init({
+        duration: 1200,
+        easing: "ease-in-out-cubic",
+        once: true,
+      });
+    });
 });
 
 // header
@@ -58,3 +66,6 @@ function scheduleTabs() {
   });
 }
 scheduleTabs();
+
+// Splitting
+Splitting();
